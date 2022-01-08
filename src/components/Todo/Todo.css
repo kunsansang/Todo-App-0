@@ -1,0 +1,75 @@
+.todo {
+  background-color: #fff;
+  padding: 23px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.4);
+  min-width: 250px;
+  border-radius: 4px;
+}
+
+.todo_tasks {
+  border-bottom: 1px dashed #ededed;
+  border-top: 1px dashed #ededed;
+  margin-top: 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fc6e40;
+  border-radius: 6px;
+  padding: 20px 14px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: 0.3s ease;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icons > ion-icon {
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.icons > ion-icon:hover {
+  transform: scale(1.5);
+}
+
+li.todo_task:hover {
+  background-color: #e66337;
+}
+
+li:hover > .icons {
+  visibility: visible;
+}
+
+li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.done_task {
+  background-color: #e66337a2;
+}

@@ -1,0 +1,16 @@
+.add_task {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.add_task > ion-icon {
+  color: #cd6bd4;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+input {
+  padding: 8px;
+  flex-grow: 1;
+}

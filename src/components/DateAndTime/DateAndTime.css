@@ -1,0 +1,32 @@
+.date_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.date__left {
+  font-size: 38px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.date__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.date__right > span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.time {
+  font-size: 16px;
+}
